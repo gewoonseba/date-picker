@@ -241,7 +241,12 @@ export function CustomDatePicker({ onDateChange }: CustomDatePickerProps) {
       {/* Date label */}
       <div className="text-right mb-2 select-none">
         <span
-          className="font-mono font-light text-base text-black transition-all duration-300 ease-out"
+          className="text-base text-black transition-all duration-300 ease-out"
+          style={{
+            fontFamily: "JetBrains Mono, monospace",
+            fontWeight: 300,
+            letterSpacing: "0.05em",
+          }}
           key={formatDate(selectedDate, daysDifference)}
         >
           {formatDate(selectedDate, daysDifference)}
